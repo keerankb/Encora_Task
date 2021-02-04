@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Home Page | Encora Test</title>
+  </head>
+  <body>
+    <section class="home-pg-section">
+        <div class="container">
+            <div class="section-heading">
+                <div class="title-header">
+                    <h2>Notes</h2>
+                </div>
+                <div class="title-button">
+                    <a href="login.html" type="submit" value="submit" name="logout-btn" class="btn btn-outline-danger">Logout</a>
+                </div>
+            </div>
+            <hr>
+            <div class="home-pg-content">    
+                <div class="right-side-section">            
+                    <table class="table-show">
+                        <tr class="row">
+                            <td class="col-12 col-md-5 first-td">
+                                <table class="inner-table-show" id="employeeList">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="second-td col-12 col-md-7">
+                                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                                    <div class="form-group">
+                                        <label>Title <span>*</span></label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                                        <input type="text" class="form-control" name="fullName" id="fullName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Body <span>*</span></label>
+                                        <textarea type="text" class="form-control" name="empCode" id="empCode" rows="10"></textarea>
+                                    </div>
+                                    
+                                    <div class="data-submit">
+                                        <input type="submit" value="Save" class="btn btn-primary">
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+  <!-- javascripst file -->
+  <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
